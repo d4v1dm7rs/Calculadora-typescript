@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <label for="">Produto</label>
+        <input type="text" class="for-control" id="produto">
+
+        <label for="">Preço</label>
+        <input type="number" class="form-control" id="preco">
+
+        <label for="">Imposto:</label>
+        <input type="number" class="form-control" id="imposto">
+
+        <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+
+        <h1>Produto: <span id="produto"></span></h1>
+        <h3>Preço: <span id="preco"></span></h3>
+        <h3>Imposto: <span id="imposto"></span></h3>
+        <h3>Total: <span id="total"></span></h3>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/produto.js"></script>
 </body>
 </html>
